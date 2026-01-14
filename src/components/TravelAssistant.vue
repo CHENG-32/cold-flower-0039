@@ -173,9 +173,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, nextTick } from 'vue'
+import { ref, onMounted } from 'vue'
 import { marked } from 'marked'
 import AMapLoader from '@amap/amap-jsapi-loader'
+
+// 高德地图类型声明
+declare const AMap: any
 
 // 类型定义
 interface Plan {
