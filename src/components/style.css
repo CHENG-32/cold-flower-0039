@@ -1095,6 +1095,35 @@ body {
     animation: progress-fill 2s ease-out;
 }
 
+/* API使用情况显示样式 */
+.api-usage-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.usage-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.usage-bar {
+    width: 100px;
+    height: 4px;
+    background: rgba(59, 130, 246, 0.2);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.usage-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
 /* 进度指示器样式 */
 .progress-container {
     margin-top: 15px;
